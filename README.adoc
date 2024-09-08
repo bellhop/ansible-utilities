@@ -1,0 +1,43 @@
+= XO Server Ansible Playbooks
+:icons: font
+
+== Overview
+
+This playbook will deploy, configure, and update something.
+
+== Playbooks
+
+The playbooks contains in this repository are:
+
+* `install.yml` - Installs something.
+
+=== Requirements
+
+You will need VM or server with the following requirements:
+
+* 2 CPU cores or more
+* 4 GB of RAM or more
+
+This playbook has been tested on the following Linux distributions and versions:
+
+* fedora 40 server
+
+== `install` Playbook Usage
+
+The `install` playbook will install the XO Server as a service.
+It will do this by doing the following things:
+
+* List of items that it will do.
+
+=== Variables
+
+These variables are preset in the _install_ role by default values and can be overridden as needed.
+
+|===
+| Variable Name | Description | Default Value
+
+| `install_x_version`
+| What version of x to install.
+| `v1.0.0`
+
+|===
