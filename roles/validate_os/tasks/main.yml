@@ -1,0 +1,9 @@
+---
+- name: Validate OS for installation
+  ansible.builtin.fail:
+    msg: The current OS ({{ ansible_facts['distribution'] }} {{ ansible_facts['distribution_major_version'] }}) is not supported
+  when:
+    - ansible_facts['distribution'] != 'fedora'
+    - ansible_facts['distribution_major_version'] != '40'
+  tags:
+    - validate-os

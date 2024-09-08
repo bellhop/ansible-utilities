@@ -1,0 +1,5 @@
+---
+- name: Validate OS
+  hosts: all
+  roles:
+    - validate_os
